@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV maker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body style="font-family: sans-serif">
+<h1>Welcome to our CV maker</h1>
+
+
+<!-- text fields -->
+<section id="info">
+<h2>To start, enter your personal information</h2>
+<label>Full name: <input id="fullName" type="text" placeholder="John Apple"></label><br>
+<label>Title: <input id="title" type="text" placeholder="Mr."></label><br>
+<label>Email: <input id="email" type="text" placeholder="name@gmail.com"></label><br>
+<label>Date of birth: <input id="dob" type="date"></label><br>
+<label>Phone: <input id="phone" type="tel" placeholder="+370 (612) 34 567"></label><br>
+<label>Location: <input id="location" type="text" placeholder="Lithuania, Vilnius"></label><br>
+<label>LinkedIn: <input id="linkedin" type="text" placeholder="John D Apple"></label><br>
+<label>Website: <input id="website" type="text" placeholder="JDApple.cat"></label><br>
+
+
+<h2>Summary</h2>
+<textarea id="summary" rows="4" cols="60"></textarea>
+
+
+<h2>Experience</h2>
+<div id="experiences"></div>
+<button id="addExp">Add experience</button>
+
+
+<h2>Education</h2>
+<div id="educations"></div>
+<button id="addEdu">Add education</button>
+
+
+<h2>Skills</h2>
+<input id="skillInput" type="text"><button id="addSkill">Add skill</button>
+<div id="skills"></div>
+
+
+<h2>File</h2>
+<button id="printPdf">Print / Save as PDF</button>
+</section>
