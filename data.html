@@ -45,4 +45,27 @@
 
 <h2>File</h2>
 <button id="printPdf">Print / Save as PDF</button>
+<!-- script for storing entered fields.-->
+<script>
+document.getElementById("printPdf").addEventListener("click", () => {
+    const cvData = {
+        fullName: document.getElementById("fullName").value,
+        title: document.getElementById("title").value,
+        email: document.getElementById("email").value,
+        summary: document.getElementById("summary").value,
+    };
+
+    console.log(cvData);
+});
+</script>
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+document.getElementById("printPdf").addEventListener("click", () => {
+    alert("Preparing CV for export...");
+    html2pdf().from(document.getElementById("info")).save("cv.pdf");
+});
+-->
+
+</script>
 </section>
